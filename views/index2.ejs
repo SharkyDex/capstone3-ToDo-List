@@ -1,0 +1,32 @@
+<%- include('./partials/header.ejs') %>
+
+<div>
+<div class="titleName">
+<h1> Work to do list  </h1>
+</div>
+<div class="mainCon">
+  <div class="noteSection">
+  <div class="listStyle">
+<ul>
+        <% if(locals.note1){ %>
+        <% for(var i = 0; i < noteL1; i++){ %>
+        <li class="listEl"><input class="chkBx" type="checkbox"><p><%= note1[i] %></p></li><hr>
+      <% } } %>
+</ul>
+</div>
+<div class="formStyle">
+<form action="/worklist" method="post">
+    <input
+      
+      type="text"
+      name="textinput1"
+      placeholder="Enter new tasks"
+       />
+    <button class="buttonList" type="submit" value="+" >+</button><hr>
+  </form>
+  </div>
+  </div>
+</div>
+  </div>
+
+  <%- include('./partials/footer.ejs') %>

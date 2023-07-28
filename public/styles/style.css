@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;   
+}
+
+
+
+
+
+.footercss {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: lightblue;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-weight: bolder;
+    color: white;
+    font-family: serif;
+    text-align: center;
+    background-color: salmon;
+    min-width: 50%;
+    min-height: 65px;
+    border-radius: 10px;
+    
+}
+
+.titleName {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    justify-content: center;
+    background-color: lightblue;
+    
+    
+}
+
+.mainCon {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.noteSection {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgb(238, 238, 166);
+}
+
+li {
+    line-height: 40px;
+    list-style-type: none;
+    
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buttonList {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #a683e3;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-justify: distribute;
+}
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 600px;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+}
+
+.listEl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    
+}
+
+li p {
+    margin-bottom: 5px;
+}
+
+.headercss {
+    background-color: lightblue;
+}
+
+html {
+    background-color: lightblue;
+}
+
+.wrktdy {
+    height: 20px;
+}

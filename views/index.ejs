@@ -1,0 +1,40 @@
+<%- include('./partials/header.ejs') %>
+
+<div>
+<% const monthList = ["January","February","March","April","May","June","July","August","September","October","November","December"]; %>
+<% const dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; %>
+
+<div class="titleName">
+
+<h1> <%= dayList[new Date().getDay()] %>, <%= (new Date().getDate()) %> <%= monthList[new Date().getMonth()] %>  </h1>
+
+</div>
+<div class="mainCon">
+<div class="noteSection">
+<div class="listStyle">  
+
+
+  
+<ul>
+        <% if(locals.note){ %>
+        <% for(var i = 0; i < noteL; i++){ %>
+          <li class="listEl"> <input class="chkBx" type="checkbox"> <p><%= note[i] %></p> </li><hr>
+      <% } } %>
+</ul>
+</div>
+<div class="formStyle">
+<form action="/" method="post">
+    <input
+      
+      type="text"
+      name="textinput"
+      placeholder="Enter new tasks"
+       />
+    <button class="buttonList" type="submit" name="list" >+</button><hr>
+  </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+  <%- include('./partials/footer.ejs') %>
